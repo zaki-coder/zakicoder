@@ -16,14 +16,14 @@ export default async function Project() {
                     Featured projects I&apos;ve built over the years
                 </h1>
                 <p className="text-base text-zinc-400 leading-relaxed">
-                    Throughout the years, I've been involved in numerous small projects, and these are the ones that hold a special place in my heart. A good portion of them is open-source, so if you come across something that catches your attention, don't hesitate to explore the code and consider contributing if you have suggestions for enhancements.
+                    Throughout the years, I&apos;ve been involved in numerous small projects, and these are the ones that hold a special place in my heart. A good portion of them is open-source, so if you come across something that catches your attention, don&apos;t hesitate to explore the code and consider contributing if you have suggestions for enhancements.
                 </p>
             </section>
 
             <section className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 mb-12">
                 {projects.map((project) => (
                     <Link href={`/projects/${project.slug}`} key={project._id} className="flex items-start gap-x-4 bg-[#1d1d20] border border-transparent hover:border-zinc-700 p-4 rounded-lg ease-in-out">
-                        <Image src={project.logo || Logo} width={60} height={60} className="bg-zinc-800 rounded-md p-2" />
+                        <Image src={project.logo || Logo} width={60} height={60} className="bg-zinc-800 rounded-md p-2" alt="logo" />
                         <div>
                             <h2 className="font-semibold mb-1">{project.name}</h2>
                             <div className="text-sm text-zinc-400">{project.tagline}</div>
