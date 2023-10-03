@@ -1,7 +1,8 @@
 import { groq } from "next-sanity";
 import client from "./sanity.client";
+import { JobType, ProfileType, ProjectType } from "@/types";
 
-export async function getProfile() {
+export async function getProfile(): Promise<ProfileType> {
     return client.fetch(
         groq`*[_type == "profile"]{
             _id,
@@ -19,7 +20,7 @@ export async function getProfile() {
     );
 }
 
-export async function getJob() {
+export async function getJob(): Promise<JobType[]> {
     return client.fetch(
         groq`*[_type == "job"] | order(startDate desc){
             _id,
@@ -34,7 +35,7 @@ export async function getJob() {
     );
 }
 
-export async function getProjects() {
+export async function getProjects(): Promise<ProjectType[]> {
     return client.fetch(
         groq`*[_type == "project"]{
             _id,
