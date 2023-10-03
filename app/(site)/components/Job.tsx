@@ -4,7 +4,7 @@ import Image from "next/image";
 
 
 
-export default async function() {
+export default async function Job() {
     const job: JobType[] = await getJob();
 
     return (
