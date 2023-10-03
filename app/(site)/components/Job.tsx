@@ -5,7 +5,7 @@ import Image from "next/image";
 
 
 export default async function() {
-    const job: JobType = await getJob();
+    const job: JobType[] = await getJob();
 
     return (
         <section className="mt-32">
