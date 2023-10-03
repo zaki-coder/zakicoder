@@ -1,5 +1,5 @@
 import { getJob } from "@/sanity/sanity.query";
-import { JobType } from "@/types";
+import type { JobType } from "@/types";
 import Image from "next/image";
 
 
