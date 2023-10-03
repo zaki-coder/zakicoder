@@ -3,7 +3,7 @@ import type { JobType } from "@/types";
 import Image from "next/image";
 
 
-
+/* eslint-disable no-unused-vars */
 export default async function Job() {
     const job: JobType[] = await getJob();
 
@@ -43,3 +43,4 @@ export default async function Job() {
     )
     
 }
+/* eslint-enable no-unused-vars */
