@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Sanity Next.js Portfolio Site",
   description: "A personal portfolio site built with Sanity and Next.js",
   openGraph: {
-    images: "add-your-open-graph-image-url-here",
+    images: "./icons/coding.png",
   },
 };
 
