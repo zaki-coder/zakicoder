@@ -33,7 +33,6 @@ export default async function Home() {
             </div>
           ))
         )}
-        {/* <HeroSvg /> */}
         <div>
           <Image src={hero} width={600} height={450} alt="hero image" quality={100} priority />
         </div>
