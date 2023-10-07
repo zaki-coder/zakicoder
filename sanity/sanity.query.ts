@@ -30,7 +30,12 @@ export async function getJob() {
             description,
             startDate,
             endDate
-        }`
+        }`,
+        {
+            next: {
+                revalidate: 60
+            }
+        }
     );
 }
 
