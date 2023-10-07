@@ -12,7 +12,6 @@ export default async function Job() {
             <div className="mb-16">
                 <h2 className="font-semibold text-4xl mb-4">Work Experience</h2>
             </div>
-
             <div className="flex flex-col gap-y-12">
                 {job.map((data) => (
                     <div key={data._id} className="flex items-start lg:gap-x-6 gap-x-4 max-w-2xl relative before:absolute before:bottom-0 before:top-[4.5rem] before:left-7 before:w-[1px] before:h-[calc(100%-50px)] before:bg-zinc-800">

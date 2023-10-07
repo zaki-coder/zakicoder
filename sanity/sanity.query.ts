@@ -1,6 +1,5 @@
 import { groq } from "next-sanity";
 import client from "./sanity.client";
-import { JobType, ProfileType, ProjectType } from "@/types";
 
 export async function getProfile() {
     return client.fetch(

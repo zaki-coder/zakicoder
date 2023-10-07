@@ -1,4 +1,3 @@
-
 import { getProjects } from "@/sanity/sanity.query";
 import type { ProjectType } from "@/types";
 import Link from "next/link";
