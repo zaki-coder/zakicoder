@@ -33,7 +33,7 @@ export async function getJob() {
         }`,
         {
             next: {
-                revalidate: 60
+                revalidate: 120
             }
         }
     );
